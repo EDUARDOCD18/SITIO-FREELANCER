@@ -8,6 +8,13 @@
 
 html {
     font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 body {
@@ -39,8 +46,8 @@ body {
     align-items: center;
 }
 
-@media (min-width: 768px){
-    .navegacion-principal{
+@media (min-width: 768px) {
+    .navegacion-principal {
         flex-direction: row;
         justify-content: space-between;
     }
@@ -54,7 +61,7 @@ body {
     font-weight: 700;
 }
 
-.navegacion-principal a:hover{
+.navegacion-principal a:hover {
     background-color: var(--primario);
     color: var(--negro);
 }
@@ -64,7 +71,7 @@ body {
     color: var(--negro);
 }
 
-.hero{
+.hero {
     background-image: url('../IMG/hero.jpg');
     background-repeat: no-repeat;
     background-size: cover;
