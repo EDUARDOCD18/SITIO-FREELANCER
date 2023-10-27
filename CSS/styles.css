@@ -75,4 +75,16 @@ body {
     background-image: url('../IMG/hero.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    height: 450px;
+    padding: 20px;
+    position: relative;
+}
+
+.contenido-hero{
+    position: absolute;
+    background-color: rgba(0 0 0 / 70%);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
 }
