@@ -63,6 +63,11 @@ h3 {
     text-align: center;
 }
 
+.boton:focus{
+    background-color: var(--primario);
+    color: var(--negro);
+}
+
 @media (min-width: 768px){
     .boton{
         width: auto;
