@@ -1,3 +1,4 @@
+/* Raíz y variebles */
 :root {
     --blanco: #ffffff;
     --negro: #000000;
@@ -6,6 +7,7 @@
     --secundario: #0097a7;
 }
 
+/* Globales */
 html {
     font-size: 62.5%;
     box-sizing: border-box;
@@ -15,33 +17,6 @@ html {
 *:before,
 *:after {
     box-sizing: inherit;
-}
-
-body {
-    font-size: 16px;
-    font-family: 'Krub', sans-serif;
-}
-
-h1 {
-    font-size: 3.78rem;
-}
-
-h2 {
-    font-size: 2.8rem;
-}
-
-h3 {
-    font-size: 1.8rem;
-}
-
-h1,
-h2,
-h3 {
-    text-align: center;
-}
-
-.titulo span {
-    font-size: 2rem;
 }
 
 .contenedor {
@@ -74,6 +49,36 @@ h3 {
     }
 }
 
+/* Tipografía */
+body {
+    font-size: 16px; /* 10px = 1rem */
+    font-family: 'Krub', sans-serif;
+}
+
+h1 {
+    font-size: 3.78rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+/* Títulos */
+.titulo span {
+    font-size: 2rem;
+}
+
+/* Navegación principal */
 .nav-bg {
     background-color: var(--secundario);
 }
@@ -109,6 +114,7 @@ h3 {
     color: var(--negro);
 }
 
+/* Contenido-hero */
 .hero {
     background-image: url('../IMG/hero.jpg');
     background-repeat: no-repeat;
@@ -136,8 +142,7 @@ h3 {
     color: var(--blanco);
 }
 
-.ubicacion{
+.contenido-hero .ubicacion{
     display: flex;
     align-items: flex-end;
 }
-
