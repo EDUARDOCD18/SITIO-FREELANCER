@@ -38,7 +38,7 @@ html {
     background-color: var(--secundario);
     color: var(--blanco);
     padding: 1rem 3rem;
-    margin-top: 1rem;
+    margin-top: 3rem;
     font-size: 2rem;
     text-decoration: none;
     text-transform: uppercase;
@@ -46,11 +46,16 @@ html {
     border-radius: .5rem;
     width: 90%;
     text-align: center;
+    border: none;
 }
 
 .boton:focus {
     background-color: var(--primario);
     color: var(--negro);
+}
+
+.boton:hover {
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -88,6 +93,25 @@ h3 {
 /* Títulos */
 .titulo span {
     font-size: 2rem;
+}
+
+/* Utilidades */
+.w-sm-100 {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .w-sm-100 {
+        width: auto;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.alinear-derecha {
+    justify-content: flex-end;
 }
 
 /* Navegación principal */
@@ -200,7 +224,8 @@ h3 {
 /* Contacto */
 .formulario {
     background-color: var(--gris);
-    width: min(60rem, 100%); /*Utiliza el valor más pequeño*/
+    width: min(60rem, 100%);
+    /*Utiliza el valor más pequeño*/
     margin: 0 auto;
     padding: 2rem;
     border-radius: 1rem;
@@ -210,11 +235,35 @@ h3 {
     border: none;
 }
 
-.formulario legend{
+.formulario legend {
     text-align: center;
     font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 2rem;
     color: var(--primario);
+}
+
+.contenedor-campos {}
+
+.campo {
+    margin-bottom: 1rem;
+}
+
+.campo label {
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.input-text {
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+.enviar .boton {
+    width: 100%;
 }
